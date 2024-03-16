@@ -10,6 +10,7 @@ type Owner struct {
 	gorm.Model
 	Name  string
 	Email string
+	Tel   string
 	Pets  []Pet
 }
 

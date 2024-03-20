@@ -24,7 +24,7 @@ func DeletePetHanler(ctx *gin.Context) {
 	}
 
 	//Delete Pet
-	if err := db.Delete(&pet, id).Error; err != nil {
+	if err := db.Delete(&pet).Error; err != nil {
 		sendError(ctx, http.StatusInternalServerError, fmt.Sprintf("error deleting pet with id: %s", id))
 		return
 	}

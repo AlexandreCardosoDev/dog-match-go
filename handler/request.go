@@ -9,8 +9,6 @@ func errParamIsRequired(name, typ string) error {
 	return fmt.Errorf("param: %s (type: %s) is required", name, typ)
 }
 
-//CreatePets
-
 type CreatePetRequest struct {
 	Name     string `json:"name"`
 	Breed    string `json:"breed"`

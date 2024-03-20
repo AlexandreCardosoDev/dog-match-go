@@ -22,3 +22,6 @@ go.work
 
 #Db folder
 db/
+
+#vscode folder
+.vscode

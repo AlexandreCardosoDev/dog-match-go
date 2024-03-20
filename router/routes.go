@@ -6,6 +6,7 @@ import (
 )
 
 func initializeRoutes(router *gin.Engine) {
+	handler.SetupHandler()
 	basepath := "api/v1"
 	v1 := router.Group(basepath)
 	{

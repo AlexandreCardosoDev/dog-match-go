@@ -13,7 +13,6 @@ func CreatePetHanler(ctx *gin.Context) {
 	ctx.BindJSON(&request)
 
 	if err := request.Validate(); err != nil {
-		logger.Errorf("Validation error: %v", err)
 		sendError(ctx, http.StatusBadRequest, err.Error())
 		return
 	}
